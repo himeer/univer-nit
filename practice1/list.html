@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>List of the best games</title>
+</head>
+
+<body>
+  <blockquote>
+    <p>
+      <a href="./index.html">The best games of all time</a><br>
+      <a href="./list.html"><b>List of the best games</b></a>
+    </p>
+  </blockquote>
+  <hr>
+
+  <details open>
+    <summary>Chart</summary>
+
+    <form>
+      <p><b>Value on the X-axis</b></p>
+      <p>
+        <label><input type="radio" name="chart-x" value="title"> Game Title</label><br>
+        <label><input type="radio" name="chart-x" value="genre"> Genre</label><br>
+        <label><input type="radio" name="chart-x" value="developer"> Developer</label>
+      </p>
+      <p><b>Value on the Y-axis</b></p>
+      <p>
+        <label><input type="checkbox" name="chart-y" value="metacritic"> Metacritic Score</label><br>
+        <label><input type="checkbox" name="chart-y" value="score"> Units Sold</label><br>
+        <label><input type="checkbox" name="chart-y" value="release"> Release Year</label>
+      </p>
+      <p><input type="submit" value="Plot"></p>
+    </form>
+  </details>
+
+  <details open>
+    <summary>Filtering</summary>
+
+    <form>
+      <p><label>Game Title: <input type="text" name="filter-title"></label></p>
+      <p><label>Genre: <input type="text" name="filter-genre"></label></p>
+      <p><label>Developer: <input type="text" name="filter-developer"></label></p>
+      <p><label>Release Year: <input type="text" name="filter-year"></label></p>
+      <p><label>Metacritic Score: <input type="text" name="filter-metacritic"></label></p>
+      <p><label>Units Sold (Millions): <input type="text" name="filter-sold"></label></p>
+      <p><input type="submit" value="Search"></p>
+    </form>
+  </details>
+
+  <details open>
+    <summary>Sorting</summary>
+
+    <form>
+      <p>
+        <label>
+          First level:
+          <select name="sort1-by">
+            <option value="no">No</option>
+            <option value="title">Game Title</option>
+            <option value="genre">Genre</option>
+            <option value="developer">Developer</option>
+            <option value="year">Release Year</option>
+            <option value="score">Metacritic Score</option>
+            <option value="sold">Units Sold</option>
+          </select>
+          by descending?
+          <input type="checkbox" name="sort1-enabled" value="desc">
+        </label>
+      </p>
+      <p>
+        <label>
+          Second level:
+          <select name="sort2-by">
+            <option value="no">No</option>
+            <option value="title">Game Title</option>
+            <option value="genre">Genre</option>
+            <option value="developer">Developer</option>
+            <option value="year">Release Year</option>
+            <option value="score">Metacritic Score</option>
+            <option value="sold">Units Sold</option>
+          </select>
+          by descending?
+          <input type="checkbox" name="sort2-enabled" value="desc">
+        </label>
+      </p>
+      <p>
+        <label>
+          Third level:
+          <select name="sort3-by">
+            <option value="no">No</option>
+            <option value="title">Game Title</option>
+            <option value="genre">Genre</option>
+            <option value="developer">Developer</option>
+            <option value="year">Release Year</option>
+            <option value="score">Metacritic Score</option>
+            <option value="sold">Units Sold</option>
+          </select>
+          by descending?
+          <input type="checkbox" name="sort3-enabled" value="desc">
+        </label>
+      </p>
+      <p><input type="submit" value="Sort"></p>
+    </form>
+  </details>
+
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Game Title</th>
+        <th>Genre</th>
+        <th>Developer</th>
+        <th>Release Year</th>
+        <th>Metacritic Score</th>
+        <th>Units Sold (Millions)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>The Legend of Zelda: Ocarina of Time</td>
+        <td>Action-Adventure</td>
+        <td>Nintendo</td>
+        <td>1998</td>
+        <td>99</td>
+        <td>7.6</td>
+      </tr>
+      <tr>
+        <td>Grand Theft Auto IV</td>
+        <td>Action-Adventure</td>
+        <td>Rockstar</td>
+        <td>2008</td>
+        <td>98</td>
+        <td>25.0</td>
+      </tr>
+      <tr>
+        <td>Red Dead Redemption 2</td>
+        <td>Action-Adventure</td>
+        <td>Rockstar</td>
+        <td>2018</td>
+        <td>97</td>
+        <td>57.0</td>
+      </tr>
+      <tr>
+        <td>Halo: Combat Evolved</td>
+        <td>First-Person Shooter</td>
+        <td>Bungie</td>
+        <td>2001</td>
+        <td>97</td>
+        <td>6.8</td>
+      </tr>
+      <tr>
+        <td>Half-Life 2</td>
+        <td>First-Person Shooter</td>
+        <td>Valve</td>
+        <td>2004</td>
+        <td>96</td>
+        <td>12.0</td>
+      </tr>
+      <tr>
+        <td>BioShock</td>
+        <td>First-Person Shooter</td>
+        <td>2K</td>
+        <td>2007</td>
+        <td>96</td>
+        <td>5.0</td>
+      </tr>
+      <tr>
+        <td>Super Mario Galaxy</td>
+        <td>Platformer</td>
+        <td>Nintendo</td>
+        <td>2007</td>
+        <td>97</td>
+        <td>12.8</td>
+      </tr>
+      <tr>
+        <td>The Witcher 3: Wild Hunt</td>
+        <td>Action RPG</td>
+        <td>CD Projekt Red</td>
+        <td>2015</td>
+        <td>93</td>
+        <td>50.0</td>
+      </tr>
+      <tr>
+        <td>Minecraft</td>
+        <td>Sandbox</td>
+        <td>Mojang</td>
+        <td>2011</td>
+        <td>93</td>
+        <td>300.0</td>
+      </tr>
+      <tr>
+        <td>Tetris</td>
+        <td>Puzzle</td>
+        <td>Nintendo</td>
+        <td>1989</td>
+        <td>94</td>
+        <td>43.0</td>
+      </tr>
+      <tr>
+        <td>Grand Theft Auto V</td>
+        <td>Action-Adventure</td>
+        <td>Rockstar</td>
+        <td>2013</td>
+        <td>97</td>
+        <td>200.0</td>
+      </tr>
+      <tr>
+        <td>The Last of Us</td>
+        <td>Action-Adventure</td>
+        <td>Naughty Dog</td>
+        <td>2013</td>
+        <td>95</td>
+        <td>37.0</td>
+      </tr>
+      <tr>
+        <td>God of War</td>
+        <td>Action-Adventure</td>
+        <td>Santa Monica Studio</td>
+        <td>2018</td>
+        <td>94</td>
+        <td>23.0</td>
+      </tr>
+      <tr>
+        <td>Elden Ring</td>
+        <td>Action RPG</td>
+        <td>FromSoftware</td>
+        <td>2022</td>
+        <td>96</td>
+        <td>25.0</td>
+      </tr>
+      <tr>
+        <td>Portal 2</td>
+        <td>Puzzle</td>
+        <td>Valve</td>
+        <td>2011</td>
+        <td>95</td>
+        <td>13.0</td>
+      </tr>
+      <tr>
+        <td>Super Mario 64</td>
+        <td>Platformer</td>
+        <td>Nintendo</td>
+        <td>1996</td>
+        <td>94</td>
+        <td>11.9</td>
+      </tr>
+      <tr>
+        <td>The Legend of Zelda: Breath of the Wild</td>
+        <td>Action-Adventure</td>
+        <td>Nintendo</td>
+        <td>2017</td>
+        <td>97</td>
+        <td>31.0</td>
+      </tr>
+      <tr>
+        <td>Red Dead Redemption</td>
+        <td>Action-Adventure</td>
+        <td>Rockstar</td>
+        <td>2010</td>
+        <td>95</td>
+        <td>15.0</td>
+      </tr>
+      <tr>
+        <td>Grand Theft Auto: San Andreas</td>
+        <td>Action-Adventure</td>
+        <td>Rockstar</td>
+        <td>2004</td>
+        <td>95</td>
+        <td>27.5</td>
+      </tr>
+      <tr>
+        <td>Halo 2</td>
+        <td>First-Person Shooter</td>
+        <td>Bungie</td>
+        <td>2004</td>
+        <td>95</td>
+        <td>8.0</td>
+      </tr>
+      <tr>
+        <td>Mass Effect 2</td>
+        <td>Action RPG</td>
+        <td>BioWare</td>
+        <td>2010</td>
+        <td>96</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>Batman: Arkham City</td>
+        <td>Action-Adventure</td>
+        <td>Rocksteady</td>
+        <td>2011</td>
+        <td>96</td>
+        <td>12.5</td>
+      </tr>
+      <tr>
+        <td>Uncharted 2: Among Thieves</td>
+        <td>Action-Adventure</td>
+        <td>Naughty Dog</td>
+        <td>2009</td>
+        <td>96</td>
+        <td>6.8</td>
+      </tr>
+      <tr>
+        <td>Resident Evil 4</td>
+        <td>Survival Horror</td>
+        <td>Capcom</td>
+        <td>2005</td>
+        <td>96</td>
+        <td>16.0</td>
+      </tr>
+      <tr>
+        <td>Metal Gear Solid 3: Snake Eater</td>
+        <td>Action-Adventure</td>
+        <td>Konami</td>
+        <td>2004</td>
+        <td>91</td>
+        <td>4.0</td>
+      </tr>
+      <tr>
+        <td>Tony Hawk's Pro Skater 2</td>
+        <td>Sports</td>
+        <td>Neversoft</td>
+        <td>2000</td>
+        <td>92</td>
+        <td>5.0</td>
+      </tr>
+      <tr>
+        <td>Tony Hawk's Pro Skater 3</td>
+        <td>Sports</td>
+        <td>Neversoft</td>
+        <td>2001</td>
+        <td>92</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>SoulCalibur</td>
+        <td>Fighting</td>
+        <td>Namco</td>
+        <td>1999</td>
+        <td>94</td>
+        <td>3.5</td>
+      </tr>
+      <tr>
+        <td>Super Smash Bros. Melee</td>
+        <td>Fighting</td>
+        <td>HAL Laboratory</td>
+        <td>2001</td>
+        <td>92</td>
+        <td>7.4</td>
+      </tr>
+      <tr>
+        <td>GoldenEye 007</td>
+        <td>First-Person Shooter</td>
+        <td>Rare</td>
+        <td>1997</td>
+        <td>94</td>
+        <td>8.0</td>
+      </tr>
+      <tr>
+        <td>Perfect Dark</td>
+        <td>First-Person Shooter</td>
+        <td>Rare</td>
+        <td>2000</td>
+        <td>94</td>
+        <td>2.5</td>
+      </tr>
+      <tr>
+        <td>Metroid Prime</td>
+        <td>Action-Adventure</td>
+        <td>Retro Studios</td>
+        <td>2002</td>
+        <td>97</td>
+        <td>2.8</td>
+      </tr>
+      <tr>
+        <td>Chrono Trigger</td>
+        <td>Role-Playing</td>
+        <td>Square</td>
+        <td>1995</td>
+        <td>92</td>
+        <td>2.5</td>
+      </tr>
+      <tr>
+        <td>Final Fantasy VII</td>
+        <td>Role-Playing</td>
+        <td>Square</td>
+        <td>1997</td>
+        <td>92</td>
+        <td>14.0</td>
+      </tr>
+      <tr>
+        <td>Super Mario Bros.</td>
+        <td>Platformer</td>
+        <td>Nintendo</td>
+        <td>1985</td>
+        <td>94</td>
+        <td>40.2</td>
+      </tr>
+      <tr>
+        <td>Super Mario World</td>
+        <td>Platformer</td>
+        <td>Nintendo</td>
+        <td>1990</td>
+        <td>94</td>
+        <td>20.6</td>
+      </tr>
+      <tr>
+        <td>The Legend of Zelda: A Link to the Past</td>
+        <td>Action-Adventure</td>
+        <td>Nintendo</td>
+        <td>1991</td>
+        <td>94</td>
+        <td>4.6</td>
+      </tr>
+      <tr>
+        <td>Super Mario Kart</td>
+        <td>Racing</td>
+        <td>Nintendo</td>
+        <td>1992</td>
+        <td>94</td>
+        <td>8.7</td>
+      </tr>
+      <tr>
+        <td>Mario Kart 8 Deluxe</td>
+        <td>Racing</td>
+        <td>Nintendo</td>
+        <td>2017</td>
+        <td>92</td>
+        <td>61.0</td>
+      </tr>
+      <tr>
+        <td>Animal Crossing: New Horizons</td>
+        <td>Simulation</td>
+        <td>Nintendo</td>
+        <td>2020</td>
+        <td>90</td>
+        <td>45.0</td>
+      </tr>
+      <tr>
+        <td>Pokemon Red/Blue</td>
+        <td>Role-Playing</td>
+        <td>Game Freak</td>
+        <td>1996</td>
+        <td>89</td>
+        <td>47.0</td>
+      </tr>
+      <tr>
+        <td>Pokemon Gold/Silver</td>
+        <td>Role-Playing</td>
+        <td>Game Freak</td>
+        <td>1999</td>
+        <td>91</td>
+        <td>23.0</td>
+      </tr>
+      <tr>
+        <td>The Legend of Zelda: Twilight Princess</td>
+        <td>Action-Adventure</td>
+        <td>Nintendo</td>
+        <td>2006</td>
+        <td>95</td>
+        <td>8.8</td>
+      </tr>
+      <tr>
+        <td>Bayonetta</td>
+        <td>Action</td>
+        <td>PlatinumGames</td>
+        <td>2009</td>
+        <td>89</td>
+        <td>1.5</td>
+      </tr>
+      <tr>
+        <td>Sekiro: Shadows Die Twice</td>
+        <td>Action-Adventure</td>
+        <td>FromSoftware</td>
+        <td>2019</td>
+        <td>90</td>
+        <td>10.0</td>
+      </tr>
+      <tr>
+        <td>Bloodborne</td>
+        <td>Action RPG</td>
+        <td>FromSoftware</td>
+        <td>2015</td>
+        <td>92</td>
+        <td>15.0</td>
+      </tr>
+      <tr>
+        <td>Dark Souls III</td>
+        <td>Action RPG</td>
+        <td>FromSoftware</td>
+        <td>2016</td>
+        <td>89</td>
+        <td>10.0</td>
+      </tr>
+      <tr>
+        <td>Persona 5 Royal</td>
+        <td>Role-Playing</td>
+        <td>Atlus</td>
+        <td>2019</td>
+        <td>95</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <td>Hades</td>
+        <td>Roguelike</td>
+        <td>Supergiant Games</td>
+        <td>2020</td>
+        <td>93</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <td>Hollow Knight</td>
+        <td>Metroidvania</td>
+        <td>Team Cherry</td>
+        <td>2017</td>
+        <td>90</td>
+        <td>3.5</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
