@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Лабораторная работа 1. Основы HTML</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend><b>Задание</b></legend>
+      <fieldset>
+        <legend><b>Вопрос 1</b></legend>
+        <p>Logo соответствует фреймворку:</p>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td width="1">
+                <img src="./images/react.png" hspace="20" height="150" border="1">
+              </td>
+              <td>
+                <p><label><input type="radio" name="question1" value="flask">Flask</label></p>
+                <p><label><input type="radio" name="question1" value="react">React</label></p>
+                <p><label><input type="radio" name="question1" value="bootstrap">Bootstrap</label></p>
+                <p><label><input type="radio" name="question1" value="django">Django</label></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend><b>Вопрос 2</b></legend>
+        <p>
+          Выберите верные утверждения о фреймворке, logo которого изображено на картинке:
+        </p>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <p><label><input type="checkbox" name="question2" value="python">использует язык Python</label></p>
+                <p>
+                  <label><input type="checkbox" name="question2" value="javascript">использует язык JavaScript</label>
+                </p>
+                <p><label><input type="checkbox" name="question2" value="frontend">использует язык frontend</label></p>
+                <p><label><input type="checkbox" name="question2" value="backend">использует язык backend</label></p>
+              </td>
+              <td width="1">
+                <img src="./images/flask.png" hspace="20" height="150" border="1">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <br>
+      <input type="submit" value="Отправить">
+    </fieldset>
+  </form>
+</body>
+
+</html>
