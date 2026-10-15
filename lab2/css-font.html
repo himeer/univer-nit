@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title> CSS шрифт </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="content">
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">CSS</a></li>
+        <li><a href="css-syntax.html">Синтаксис CSS</a></li>
+        <li><a class="active" href="css-font.html">CSS шрифт</a></li>
+        <li><a href="blocks.html">Блочное представление</a></li>
+      </ul>
+    </div>
+    <div class="image-section">
+      <div class="image">
+        <div class="image-wrapper"><img src="resources/image1.png"></div>
+      </div>
+      <div class="image">
+        <div class="image-wrapper"><img src="resources/image2.png"></div>
+      </div>
+      <div class="image">
+        <div class="image-wrapper"><img src="resources/image3.png"></div>
+      </div>
+    </div>
+    <div class="text-section">
+      <p>
+        <span class="code-name-main">font</span> - универсальное свойство, которое позволяет одновреенно задать несколько
+        характеристик. Чтобы свойство <span class="code-name">font</span> работало корректно, значения должны указываться в строго определенном
+        порядке:
+      </p>
+
+      <pre class="pre-code"><code>селектор {
+  font: [font-style] [font-variant] [font-weight] [font-stretch] [font-size]/[line-height] [font-family];
+}</code></pre>
+
+      <p>
+        <span class="code-name-main">font-style</span> - это свойство в CSS, которое определяет начертание шрифта: обычное, курсивное (<span class="code-name">italic</span>) или наклонное
+        (<span class="code-name">oblique</span>). В основном его используют для того, чтобы выделить текст или отдельные слова в абзаце. Доступные
+        значения:
+      </p>
+
+      <ul>
+        <li><span class="bold">normal</span> (по умолчанию) - обычное (прямое) начертание текста.</li>
+        <li><span class="bold">italic</span> - курсивное начертание.</li>
+        <li><span class="bold">oblique</span> - наклонное начертание.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

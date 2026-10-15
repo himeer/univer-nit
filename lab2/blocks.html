@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title> CSS шрифт </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="content">
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">CSS</a></li>
+        <li><a href="css-syntax.html">Синтаксис CSS</a></li>
+        <li><a href="css-font.html">CSS шрифт</a></li>
+        <li><a class="active" href="blocks.html">Блочное представление</a></li>
+      </ul>
+    </div>
+    <div class="blocks-section">
+      <div class="main-text">
+        <div class="main-text-wrapper">
+          <p>
+            Блочное представление (block layout) — это модель, в которой каждый элемент страницы
+            рассматривается как прямоугольный блок, занимающий место в потоке документа. Блочные
+            элементы (например, <span class="code-name">div</span>, <span class="code-name">p</span>,
+            <span class="code-name">section</span>) начинаются с новой строки и растягиваются на всю
+            доступную ширину по умолчанию.
+          </p>
+          <p>
+            Каждый блок состоит из четырёх частей: содержимого (content), внутренней отступки
+            (<span class="code-name">padding</span>), границы (<span class="code-name">border</span>)
+            и внешнего отступа (<span class="code-name">margin</span>). Совокупность этих частей
+            называется моделью блока (box model).
+          </p>
+          <p>
+            По умолчанию ширина блока вычисляется по свойству <span class="code-name">width</span>,
+            которое задаёт только размер содержимого. Чтобы в ширину были включены также
+            <span class="code-name">padding</span> и <span class="code-name">border</span>,
+            используется свойство <span class="code-name">box-sizing</span> со значением
+            <span class="code-name">border-box</span>.
+          </p>
+          <p>
+            Положение блоков в потоке можно менять с помощью свойства
+            <span class="code-name">display</span>: значение
+            <span class="code-name">block</span> делает элемент блочным,
+            <span class="code-name">inline</span> — строчным, а
+            <span class="code-name">none</span> полностью скрывает элемент, освобождая занимаемое
+            им место.
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <div class="image-wrapper">
+          <img src="resources/image-block-main.png">
+        </div>
+        <div class="image-wrapper">
+          <img src="resources/image-block-main.png">
+        </div>
+      </div>
+    </div>
+    <div class="image-section">
+      <div class="image">
+        <div class="image-wrapper"><img src="resources/image-block-mdn-horizontal.png"></div>
+      </div>
+      <div class="image">
+        <div class="image-wrapper"><img src="resources/image-block-mdn-vertical.png"></div>
+      </div>
+      <div class="image">
+        <div class="image-wrapper"><img src="resources/image-block-mdn-horizontal.png"></div>
+      </div>
+    </div>
+</body>
+
+</html>
