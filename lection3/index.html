@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS: Комбинация классов</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #121214;
+      color: #e1e1e6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 0 auto;
+      background: #202024;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #ff9800;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #29292e;
+      padding-bottom: 10px;
+    }
+
+    .rules {
+      background: #29292e;
+      padding: 15px;
+      border-left: 4px solid #ff9800;
+      margin-bottom: 25px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .sandbox {
+      background: #121214;
+      padding: 25px;
+      border-radius: 6px;
+      border: 2px dashed #323238;
+    }
+
+    .float-right {
+      float: right;
+    }
+
+    .block-line {
+      overflow: hidden;
+      vertical-align: middle;
+    }
+
+    .ad-card {
+      background: #202024;
+      border: 2px solid #29292e;
+      border-radius: 4px;
+      padding: 20px;
+    }
+
+    .ad-title {
+      font-weight: bold;
+      font-size: larger;
+    }
+
+    .buy-button {
+      background: #ff9800;
+      border: none;
+      border-radius: 4px;
+      font-weight: bolder;
+      padding: 8px 16px;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .badge {
+      background: #29292e;
+      color: #999999;
+      border-radius: 4px;
+      float: left;
+      padding: 4px 12px;
+      margin: 10px 16px 10px 0px;
+      font-size: small;
+    }
+
+    .full-price {
+      color: #7c7c8a;
+      text-decoration: line-through;
+      font-size: small;
+      margin: 10px 16px 10px 0px;
+    }
+
+    .best-price {
+      background: #04d361;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      padding: 4px 12px;
+      margin: 10px 16px 10px 0px;
+    }
+
+    .note {
+      margin-top: 12px;
+      font-size: small;
+    }
+
+    .running-out {
+      color: #e34648;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🧩 Задание: Мультиклассы и Блочная модель</h1>
+
+    <div class="rules">
+      <strong>🚫 Условие:</strong> Разрешено использовать только теги <code>&lt;div&gt;</code> и
+      <code>&lt;span&gt;</code>. Любые другие теги запрещены.
+      <br><br>
+      <strong>🛠️ Задание:</strong> Собрать карточку товара из «сырого» текста. Чтобы элементы встали на свои
+      места, необходимо комбинировать несколько классов в одном теге через пробел (например:
+      <code>class="class1 class2 class3"</code>).
+      <br><br>
+      <strong>Требования к верстке:</strong>
+      <ul>
+        <li>Вся карточка должна иметь рамку, скругления и внутренние отступы.</li>
+        <li>Кнопка «Купить» должна стоять в верхнем правом углу карточки, ровно по верхней линии заголовка.</li>
+        <li>Название товара должно четко отделяться от нижних элементов и не слипаться с ними.</li>
+        <li>Бейджи статуса («В наличии» и «🔥 Хит») должны стоять строго в один ряд, иметь аккуратные маленькие
+          отступы и небольшой промежуток между собой.</li>
+        <li>Блок цен должен находиться на новой строке, но старая и новая цена должны стоять на одной
+          горизонтальной линии. Под ценой должен быть физический отступ, чтобы описание не налипало сверху.
+        </li>
+        <li>Текст описания должен идти отдельным блоком. Фраза «КОНЧАЕТСЯ!» должна загореться красным, но
+          остаться строго внутри строки, не разбивая предложение.</li>
+      </ul>
+    </div>
+
+    <h2>Результат сборки:</h2>
+    <div class="sandbox">
+      <div class="ad-card">
+        <input type="button" class="buy-button float-right" value="Купить">
+        <div class="ad-title">Курс «Архитектура CSS»</div>
+        <div class="block-line">
+          <div class="badge">В наличии</div>
+          <div class="badge">🔥 Хит</div>
+        </div>
+        <div class="block-line">
+          <div class="inline-block full-price">9 900 ₽</div>
+          <div class="inline-block best-price">5 400 ₽</div>
+        </div>
+        <div class="note">Внимание! Товар <span class="running-out">КОНЧАЕТСЯ!</span> Доступно всего 3 места со скидкой.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
