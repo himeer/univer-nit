@@ -1,0 +1,339 @@
+/* Utils */
+.row {
+  overflow: hidden;
+}
+
+.row > div {
+  float: left;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.pt-half {
+  padding-top: 4px;
+}
+
+.pb-half {
+  padding-bottom: 4px;
+}
+
+.pl-half {
+  padding-left: 4px;
+}
+
+.pr-half {
+  padding-right: 4px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.border-round {
+  border-radius: 50%;
+}
+
+.circle-image-wrapper {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.center-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle-image-wrapper img,
+.center-image-wrapper img {
+  width: 100%;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Global UI */
+div.primary-button {
+  display: inline-block;
+}
+
+div.primary-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.primary-button {
+  background: #f0dbb9;
+  border: 2px solid #ecb863;
+  border-radius: 8px;
+  padding: 2px 4px;
+}
+
+.primary-button:hover {
+  background: #ecb863;
+}
+
+/* Sections */
+.navbar {
+  overflow: hidden;
+  border: 2px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 8px;
+  font-size: 0;
+}
+
+.navbar * {
+  font-size: medium;
+}
+
+.navbar .links {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.navbar .links ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .links li {
+  float: left;
+}
+
+.navbar .links a {
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .links a.active {
+  background: #f0dbb9;
+  border: 2px solid #ecb863;
+}
+
+.navbar .links a:hover {
+  background: #ecb863;
+}
+
+.navbar .search {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.navbar .search-wrapper {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.navbar .search-wrapper input[type="search"] {
+  min-width: none;
+  width: 55%;
+}
+
+.top-gallery {
+  height: 0;
+  padding-top: 25%;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.top-gallery-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.top-gallery-inner > .left-section {
+  width: 33.3333%;
+  height: 100%;
+}
+
+.top-gallery-inner > .right-section {
+  width: 66.6666%;
+  height: 100%;
+}
+
+.top-gallery-inner > .right-section > div {
+  width: 100%;
+  height: 50%;
+}
+
+.right-bottom-section > div {
+  width: 50%;
+  height: 100%;
+}
+
+.main-section {
+  overflow: hidden;
+}
+
+.main-section > .left-column {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  padding-right: 32px;
+}
+
+.main-section > .right-column {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+  border-left: 2px solid #d1d1d1;
+}
+
+.main-section .showcase {
+  overflow: hidden;
+}
+
+.main-section .showcase > div {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.main-section .showcase > div > div {
+  width: 100%;
+}
+
+.main-section .showcase .show-case-item-picture {
+  width: 60%;
+  margin: auto;
+}
+
+.main-section .showcase-item-title {
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.main-section .showcase-item-info a {
+  color: black;
+}
+
+.main-section .top-project {
+  margin-top: 24px;
+}
+
+.main-section h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-section .top-project-info {
+  overflow: hidden;
+}
+
+.main-section .top-project-info > div {
+  float: left;
+}
+
+.main-section .top-project-info > .left-column {
+  width: 30%;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.main-section .top-project-info > .middle-column {
+  width: 40%;
+}
+
+.main-section .top-project-info > .middle-column img {
+  width: 100%;
+}
+
+.main-section .top-project-info > .right-column {
+  width: 30%;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.main-section .top-project-info > .right-column > div + div {
+  margin-top: 4px;
+}
+
+.main-section > .right-column {
+  box-sizing: border-box;
+  padding: 12px 12px 0px;
+}
+
+.main-section > .right-column h1 {
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.main-section > .right-column .right-column-item {
+  overflow: hidden;
+}
+
+.main-section > .right-column .right-column-item + .right-column-item {
+  margin-top: 4px;
+}
+
+.main-section > .right-column .right-column-item > div {
+  float: left;
+  width: 50%;
+} 
+
+.main-section > .right-column .right-column-item .primary-button {
+  margin-top: 4px;
+}
+
+.main-section > .right-column .right-column-item-image {
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+
+.main-section > .right-column .right-column-item-image img {
+  width: 100%;
+}
+
+footer {
+  margin-top: 32px;
+  padding-top: 12px;
+  border-top: 2px solid #d1d1d1;
+}
+
+footer div {
+  display: inline-block;
+}
+
+footer div:first-child {
+  text-align: left;
+}
+
+footer div:last-child {
+  float: right;
+  text-align: right;
+}
