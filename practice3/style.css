@@ -1,0 +1,235 @@
+/* Utility */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.column-half {
+  flex: 1;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 4px;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.m-2 {
+  margin: 8px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.p-2 {
+  padding: 8px;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+.pr-4 {
+  padding-right: 16px;
+}
+
+.pl-4 {
+  padding-left: 16px;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Global UI */
+a.primary-button {
+  max-width: max-content;
+  display: block;
+  text-decoration: none;
+  color: black;
+  background: #f0dbb9;
+  border: 2px solid #ecb863;
+  border-radius: 8px;
+  padding: 2px 4px;
+}
+
+a.primary-button:hover {
+  background: #ecb863;
+}
+
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Header */
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: end;
+  gap: 8px;
+}
+
+nav a {
+  display: block;
+  border-radius: 8px 8px 0px 0px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #edc990;
+}
+
+nav a.active {
+  background-color: #ecb863;
+  font-weight: bold;
+}
+
+.title-section {
+  background-color: #ecb863;
+  padding: 8px;
+}
+
+.title-section h1 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Main */
+main {
+  width: 90%;
+  margin: auto;
+}
+
+main h2 {
+  margin: 4px 0 16px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+main p {
+  margin: 0;
+}
+
+main a {
+  color: #a17729;
+}
+
+main > .top-gallery-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 40vh;
+}
+
+main > .top-gallery-section a {
+  display: block;
+  overflow: hidden;
+}
+
+main > .top-gallery-section > :first-child {
+  grid-area: span 2 / span 2;
+}
+
+main .top-info-section > div {
+  flex: 1;
+}
+
+main .top-info-section > :first-child {
+  border-right: 2px solid #ecb863;
+}
+
+@media (width > 1200px) {
+  main .top-info-section > :first-child {
+    flex: 3;
+  }
+
+  main .top-info-section > :last-child {
+    flex: 1;
+  }
+}
+
+main .top-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (width <= 1200px) {
+  main .top-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+main .top-card {
+  border: 1px solid #ecb863;
+  border-radius: 2vw;
+}
+
+main .top-card:nth-child(even) > :first-child {
+  flex-direction: column-reverse;
+}
+
+main .top-card:nth-child(even) > :last-child {
+  text-align: right;
+}
+
+main .top-card img {
+  height: 20vh;
+  border-radius: 2vw;
+}
+
+main .additional-card img {
+  height: 30vh;
+}
+
+/* Footer */
+footer {
+  margin-top: 32px;
+  padding-top: 12px;
+  border-top: 2px solid #d1d1d1;
+}
