@@ -1,0 +1,94 @@
+h3 {
+  text-align: center;
+}
+
+body > p {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  padding: 0 20%;
+}
+
+body > p > a {
+  display: block;
+  text-align: center;
+  background-color: lavender;
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+}
+
+body > p > :nth-child(2) {
+  grid-area: 1 / 1 / 2 / span 2;
+  background-color: lightgreen;
+}
+
+@media (width <= 700px) {
+  body > p {
+    grid-template-columns: 1fr;
+  }
+
+  body > p > :nth-child(2) {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: lightgreen;
+  }
+}
+
+p > :nth-child(2)::before {
+  content: "✔";
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 8px;
+  background-color: lightgreen;
+}
+
+.content > .topic {
+  background-color: white;
+  padding: 4px;
+}
+
+.content > .topic:nth-child(2) {
+  background-color: lavender;
+}
+
+.content > .topic:first-child,
+  .content > .topic:last-child {
+    padding: 4px 8px;
+  }
+
+@media (width > 700px) {
+  .content > .topic:first-child,
+  .content > .topic:last-child {
+    grid-column: span 3;
+  }
+}
+
+.content > .topic a {
+  background-color: lavender;
+}
+
+@media (width <= 700px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .content > :last-child {
+    grid-column: span 2;
+    width: 50%;
+  }
+
+  .content > .topic {
+    text-align: center;
+  }
+}
+
+@media (width > 700px) {
+  .content > .topic b {
+    display: block;
+  }
+}
